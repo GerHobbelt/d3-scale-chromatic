@@ -30,7 +30,7 @@
     "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3-scale-chromatic/build/d3-scale-chromatic.js d3-scale-chromatic.v1.js && cp ../d3-scale-chromatic/build/d3-scale-chromatic.min.js d3-scale-chromatic.v1.min.js && git add d3-scale-chromatic.v1.js d3-scale-chromatic.v1.min.js && git commit -m \"d3-scale-chromatic ${VERSION}\" && git push && cd - && zip -j build/d3-scale-chromatic.zip -- LICENSE README.md build/d3-scale-chromatic.js build/d3-scale-chromatic.min.js"
   },
   "dependencies": {
-    "d3-interpolate": "1"
+    "d3-interpolate": "3.0.0"
   },
   "devDependencies": {
     "eslint": "2",
